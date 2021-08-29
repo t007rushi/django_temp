@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from . import models
 
 # Create your views here.
 def index(request):
@@ -9,4 +10,5 @@ def index(request):
 def counter(request):
     text = request.POST['text']
     amount = len(text.split())
-    return render(request,'counter.html',{'val':amount})    
+    return render(request,'counter.html',{'val':amount})  
+
