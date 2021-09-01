@@ -5,6 +5,6 @@ class Car:
 c = Car()
 c.id = 0
 c.name = "rushi"
-print(c.name+" "+c.id)
+print(c.name+" "+str(c.id))
 
 print("Rushi")
