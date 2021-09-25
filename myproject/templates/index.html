@@ -9,12 +9,12 @@
     <script src="fixer.js">Document</script>
 
     <head>
-        <h2>Hello {{name}} new success</h2>
+        <h2>Hello {{name}} World</h2>
     </head>
-    <p> Enter your paragraph for count</p>
+    <p> Enter your name here</p>
     <form method="POST" action="counter">
         {% csrf_token %}
-        <textarea name="text" rows=20 cols=40></textarea><br>
+        <textarea name="text"></textarea><br>
         <input type="submit">
     </form>
 </body>
