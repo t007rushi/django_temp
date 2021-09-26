@@ -10,5 +10,4 @@ def index(request):
 def counter(request):
     text = request.POST['text']
     amount = len(text.split())
-    return render(request,'counter.html',{'val':amount})  
-
+    return render(request,'counter.html',{'val':amount})
